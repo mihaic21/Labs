@@ -26,11 +26,6 @@ namespace MAP_Lab7.Model
             return (this.getGrade() + this.grade2 + this.grade3) / 3;
         }
 
-        bool Comparable<Student>.isGreaterThan(Student student)
-        {
-            return (this.average() > student.average());
-
-        }
 
         public override String ToString()
         {
