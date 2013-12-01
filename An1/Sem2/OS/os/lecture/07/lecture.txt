@@ -1,0 +1,58 @@
+Signals
+-------
+- signals are software interrupts
+- can be redirected to execute code of our own
+(
+  - function types
+    - system call - provided by the kernel
+                  - execute in a special stack and protected in a special
+                    way
+                  - examples: open, read, write, close
+    - library function - user land functions
+                       - usually more friendly
+                       - posibly slower than systme calls
+                       - use system calls internally
+                       - examples: fopen, fread, fwrite, fclose, fprintf,
+                                   fscanf, fgets, fputs, fgetc, fputc,
+                                   printf, scanf, sprintf, scanf
+)
+- system calls involved
+  - signal - IT DOES NOT SIGNAL ANYTHING
+           - it redirects the signal to call a function of our own
+  - kill - DOES NOT KILL ANYTHING, IT JUST SIGNALS
+         - the effect of some of the signals is to stop to process
+  - pause, alarm
+  
+File I/O
+--------
+- race condition - many simultaneous processes modifying the same resource
+
+- critical resource - the resource modified in a race condition (in our
+                      case the file or more exactly the first byte of file)
+
+File Locking
+------------
+- functions involved (some are system calls some are not)
+  - fcntl - big scary function that can do a lot fo stuff
+          - most flexible of all
+  - lockf - simpler than fcntl, can only do a part of what fcntl can do
+  - flock - simpler than fcntl, can only do a part of what fcntl can do
+- file locks are ADVISORY. They are NOT enforced by the system
+  - when a process locks a file, it simply marks it as locked
+  - the operating system wil lnot force processes to take that marking into
+    account
+  - only processes try to lock the same thing will stop and wait until the
+    lock is freed
+  - if you want the locks to be enforced by the system (MANDATORY) you need
+    to be root, and mount the partition or disk with special options
+
+
+
+
+
+
+
+
+
+
+

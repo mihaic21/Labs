@@ -1,0 +1,15 @@
+EXEC
+----
+
+- mechanism for making other programs into processes
+
+- works as a parasite
+
+- as soon as it is called from a process (host), all the host's code
+  disappears and it is replaced by the new program's code
+
+- there are 6 versions of exec, that differ by:
+  - how the path to the new program is given: absolute or relative
+  - is the old environment kept or replaced by a new one
+  - they way the new programs arguments are passed: array or simple
+    parameter list

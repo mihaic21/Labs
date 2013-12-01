@@ -1,0 +1,3 @@
+   4|        23|      4444|   housekeeping|
+   5|        12|       230|           food|
+   3|        29|       412|         others|

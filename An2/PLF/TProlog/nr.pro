@@ -1,0 +1,9 @@
+domains
+  el=symbol
+  list=el*
+predicates
+  apare(list,el,integer)
+clauses
+  apare([],_,0).
+  apare([H|T],E,N):-H=E,!,apare(T,E,N1),N=N1+1.
+  apare([_|T],E,N):-apare(T,E,N).

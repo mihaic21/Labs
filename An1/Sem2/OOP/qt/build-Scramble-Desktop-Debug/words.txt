@@ -1,0 +1,4 @@
+hello 1
+dog 3
+frog 5
+cat 0

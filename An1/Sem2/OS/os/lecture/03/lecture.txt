@@ -1,0 +1,100 @@
+* valgrind
+* make + makefiles
+* shell programming
+
+
+source.c   ---compile--> source.o   ---linking--> binary executable
+a.c                      a.o --------/
+b.c                      b.o -------/
+
+if you change on file, compile just that one file, and then
+simply link all objects
+
+
+make
+----
+* at startup reads automatically a file Makefile present in the current dir. If not there it looks for makefile, and if that is not there, it fails. 
+
+* Makefile defines dependencies and calls comamns (like gcc) only when needed)
+
+
+Every program that uses files, associates (when opened) with a numerical ID, which starts from 0, and keeps growing. When you start ANY program you already have three open files:
+
+0 - standard input (whatever the user writes at the console)
+  - scanf
+  - fscanf(stdin, ...)
+  - read(0, ...)
+
+1 - standard output (whatever you print to the console)
+  - printf
+  - fprintf(stdout, ...)
+  - write(1, ...
+
+2 - standard error
+  - is like the standard output but it is meant (not forced) to show
+    only error messages
+  - fprintf(stderr, ...
+  - write(2, ...
+  - perror
+
+grouping commands on one line
+
+( ) - whatever executs between the parenthesis is not visible outside
+{ } - what executes between then IS visible outside
+
+
+In C: 0 = false
+      not 0 = true
+
+In SH: 0 = true
+       not 0 = false
+
+
+Shell Variables
+---------------
+a=5
+s="cat"
+b="john"
+
+echo $a $s $b
+
+${NAME-VALUE}
+${NAME+VALUE}
+${NAME=VALUE}
+${NAME?VALUE}
+
+
+Predefined Variables
+--------------------
+$?
+$0 $1 ... $9 - command line arguments for a script
+$* - all command line arguments for a script
+$# - number of command line arguments for a script
+
+Environment Variables
+---------------------
+$PATH
+$PS1
+$TERM
+
+Grouping words in a single value
+--------------------------------
+" " - everything between quotes behaes a a single word
+    - variables refered inside are substituted with their value
+
+' ' - same as quotes but variables are NOT substituted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+1|laptop|k56|asus|1500|12|12|
+2|laptop|u36|asus|1300|1244|15|
+3|pc|thebest|apple|12402|14|3|
+4|phone|evo3d|htc|500|1913|3|
+5|phone|one|htc|1000|1231|5|
+6|fax|sx100|hp|300|300|5|
+7|laptop|bad|hp|135|124|3|
+8|fridge|new|arctic|3|12|4|
+9|phone|s4|samsung|341|12|3|
+10|laptop|taichi|asus|2000|17|13|
+11|laptop|sadnka|asus|150|12|5|
+|

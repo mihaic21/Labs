@@ -1,0 +1,4 @@
+Die Hard;Bla;1
+Hrd;dsf;0
+qwe;rty;1
+zxc;gfh;0

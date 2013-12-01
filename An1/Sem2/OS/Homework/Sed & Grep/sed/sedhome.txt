@@ -1,0 +1,3 @@
+Hello my name is sed
+This is a test of my regex
+It should work

@@ -1,0 +1,17 @@
+total 92
+-rw-rw-r-- 1 mihai mihai 1512 Mar 23 22:05 awk.zip
+-rwxrwxr-x 1 mihai mihai 8466 Mar 12 16:53 c1home
+-rw-rw-r-- 1 mihai mihai  334 Mar 11 16:44 c1home.c
+-rw-rw-r-- 1 mihai mihai  336 Mar 11 16:38 c1home.c~
+-rw-rw-r-- 1 mihai mihai 3001 Mar 11 16:45 c1home.zip
+-rwxrwxr-x 1 mihai mihai 8469 Mar 18 18:45 c2home
+-rw-rw-r-- 1 mihai mihai  509 Mar 18 18:44 c2home.c
+-rw-rw-r-- 1 mihai mihai 3185 Mar 18 18:48 c2home.zip
+-rwxrwxr-x 1 mihai mihai 8571 Mar 18 18:58 c3home
+-rw-rw-r-- 1 mihai mihai  587 Mar 18 18:57 c3home.c
+-rw-rw-r-- 1 mihai mihai 3295 Mar 18 18:59 c3home.zip
+-rw-rw-r-- 1 mihai mihai  175 Mar 18 19:17 fisier.txt
+-rw-rw-r-- 1 mihai mihai    0 Mar 28 21:03 ls-l.txt
+-rwxrwxr-x 1 mihai mihai 8542 Mar 15 10:34 matrix4d
+-rw-rw-r-- 1 mihai mihai 1017 Mar 12 09:23 matrix4d.c
+-rw-rw-r-- 1 mihai mihai 2549 Mar 23 22:10 sedgrep.zip

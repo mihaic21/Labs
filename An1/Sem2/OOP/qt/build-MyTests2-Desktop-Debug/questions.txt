@@ -1,0 +1,3 @@
+1|what day is it today? a-monday b-tuesday c-wednesday|b
+2|what's your name? a-mihai b-andrei c-cristi|a
+3|where are you? a-here b-there c-not there|a

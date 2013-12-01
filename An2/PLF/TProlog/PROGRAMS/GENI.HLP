@@ -1,0 +1,19 @@
+ This is a small example on how to create a classification expert-system in
+ TURBO-Prolog.
+
+ Animals are classified in different categories which are further
+ specified. One can come from one category to another if a number of
+ conditions are fulfilled.
+
+ Please understand this is an example not a finished expert system
+ development tool.  
+ 
+ For more information on working with GENI please refer to Appendix H
+ in the Reference Guide.  
+
+ Note:  At the prompt to update, enter a ? and an example will be
+        shown.
+
+        "NOT" is a predicate.  The condition "not is a fast car" will
+        fail if "is a fast car" has been asserted into the database.
+

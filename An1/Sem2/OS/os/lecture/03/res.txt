@@ -1,0 +1,3 @@
+mem.c:int main() {
+mem.c:    m = (int**)malloc(N*sizeof(int*));
+mem.c:        m[i] = (int*)malloc(N*sizeof(int));

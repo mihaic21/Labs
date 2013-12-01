@@ -1,0 +1,3 @@
+   2|        23|       150|         others|
+   3|        21|       190|      telephone|
+   5|        13|         8|       clothing|

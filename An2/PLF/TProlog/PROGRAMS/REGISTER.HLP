@@ -1,0 +1,107 @@
+The register project is a finished example demonstrating a register
+database system using an external database. In it we try to showcase
+most of the new facilities in version 2.0, including:
+
+External Databases and the B+Trees;
+
+The Trap Predicate, used in the database output routines to
+allow interruption of long listings;
+
+The New Format predicate, used by the output routines;
+
+Local Databases;
+
+turning off the break-test in critical places;
+
+A framework for maintaining a secure database system is
+implemented by maintaining a log file where all changes to the
+database are recorded. With this log file and a backup of the
+database it is possible to construct a system where data is never
+lost.
+
+If the log file updating is disabled and the database is not
+flushed after each update, execution will be many times faster;
+therefore feel free to remove it if you prefer speed to
+security.
+
+In order to produce a more attractive demonstration, we have used
+some of the routines from the TOOLBOX (screen handler, menu tools
+and line input); in particular, the screen handler is needed to
+do full-screen input. We hope you like the tools so much that you
+feel enticed to buy the TOOLBOX; in it you will find dozens of 
+other tools, including several standard menu predicates implementing 
+menus identical to the ones in the register system and the Turbo 
+Prolog system, a description on how to use and modify the screen 
+handler, a virtual screen handler where the input form can be much 
+larger than the actual screen, and a screen painter with which you 
+may interactively design your own screen forms.
+
+
+The program maintains two different database relations:
+
+A city register which stores city names together with zip codes.
+      
+A person register with a persons First name, Last name, Address,
+and a number of interests for these persons.
+
+When an address for a person is typed in, only a zip code is
+requested. The city name is automatically picked from the city
+relation, with a key_search on the zip code.
+
+The program maintains two B+ Trees; people are indexed on their
+names, and cities are indexed on their zip codes. In the browser,
+records are retrieved in sorted order, and you therefore move
+forward and backward in the records in sorted order.
+
+During input, a number of comma-separated codes may be entered
+for each person in the 'person code' field. During output
+(printout) these codes may then be used to pick out people with
+codes matching one or more requirements.
+
+In order to use the program you must first compile the project.
+The easiest way to do this is by placing all the files mentioned
+below in the current directory, and then choosing 'compile
+project' from the main menu; the project is named 'register.prj'. 
+You may then leave the Turbo Prolog system, and run 'register.exe'
+as a stand alone program. Please note that if your setup
+specifies the .OBJ directory to be other than the current
+(source) directory, which isn't a bad idea, you'll have to move
+the scrhnd.obj and register.sym files to this directory before
+compilation.
+
+
+The files in the register project are:
+
+register.prj   \The project definition.
+
+globals.pro    \The global definitions for the project.
+
+main.pro       \User interface / main program.
+
+browser.pro    \A database record browser.
+
+prnhnd.pro     \Some printer utilities.
+
+scrhnd.obj     \A compiled version of the screen handler from
+                the toolbox.
+
+register.sym   \The .SYM file from compiling scrhnd.obj, 
+                This must be used if scrhnd.obj is used.
+
+refshnd.pro   \A module to generate SCRHND.OBJ.
+
+menu2.pro     \Some menu tools.
+
+lineinp.pro   \An extended line input driver.
+
+tpreds.pro    \Utility predicates.
+
+tdoms.pro     \General domain definitions.
+
+register.bin  \The binary database.
+
+register.log  \The update log file.
+
+register.zup  \Saved setup.
+
+register.hlp  \This file.

@@ -1,0 +1,92 @@
+UNIX Shell scripts
+------------------
+* In UNIX any file can be executable if given the proper permissions
+
+      chmod 700 a.sh
+
+* Can I execute a text file? What would that mean? The file will be
+  interpreted by the default shell (/bin/bash or other SHes)
+
+  Other SHes: bash, sh (old and everywhere), csh, tcsh, ksh, zsh, ...
+
+* A UNIX script is an ASCII file containing code that is interpretable
+  by a program (shell, or possibly sed or awk or perl or python ...)
+
+  How do we specify which such program should interpret it? Put the path
+  to that program on the first line prefixed with #!
+
+Control structures
+------------------
+* if, for, while, until, case
+
+* They define sub-blocks similar to how it happens in C but they do not
+  use curly brakets
+
+* if ... then ... elif ... then ... else ... fi
+* for ... do ... done
+* while ... do ... done
+* until ... do ... done
+* case ... in ... esac
+
+Shell Conditions
+----------------
+* You can find them all in "man test"
+
+* string: -n - is not empty
+          -z - is empty
+          =  - equal
+          != - not equal
+
+* numbers -lt -le -eq -ge -gt
+
+* files  -e - exists
+         -r - readable
+         -w - writable
+         -x - exceutable
+         -f - exists and it is a file
+         -d - exists and it is a directory
+
+FOR
+---
+* For cycles over a list of value. It is NOT similar to the C for
+  instruction
+* It is similar to foreach
+
+Find the longest word in all the files in a given directory tree
+----------------------------------------------------------------
+
+1. Concatenate all files into a single huge file, or if possible cycle
+   through all files as if they were one
+2. For each word calculate its lenth and print out something like this
+   3 cat
+   5 seven
+   6 cowboy
+3. Sort list reversly
+
+Homework
+--------
+Given a text file, extract all the natural numbers (sequences of digits
+without anything else) in that file and calculate their sum using a
+Shell script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

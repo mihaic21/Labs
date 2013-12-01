@@ -1,0 +1,10 @@
+1,Implement UI,10.07.2013,2
+2,Exam,11.07.2013,4
+3,sleep until,11.10.2013,10
+4,roadtrip,02.08.2013,20
+5,Junior Summer University,18.07.2013,14
+6,Summer,06.06.2013,2
+7,examen,11.12.2013,3
+8,learn,11.07.2013,5
+9,motor,23.04.2014,1
+10,hello,11.08.2013,10

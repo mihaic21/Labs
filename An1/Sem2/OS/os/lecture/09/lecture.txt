@@ -1,0 +1,128 @@
+Pipes
+-----
+Pipes are a mean of communication between process, that works
+exclusively for processes who inherit the pipe from some common
+ancestor. They are called sometimes (in Windows) anonymous pipes.
+
+Reading and writing to pipes differs from files, because it actually
+creates data (write) or consumes data (read). Write adds data to the
+pipe, and read removes it from the pipe.
+
+How should handle messages large then a primitive type (int, char,
+float, ...)
+
+// Sender
+char s[100]
+
+scanf("%s", s);
+
+int len = strlen(s)+1;
+write(p[1], &len, sizeof(int));
+write(p[1], s, strlen(s));
+
+// Receiver
+char* s;
+
+read(p[1], &len, sizeof(int));
+s = (char*)malloc(len);
+read(p[1], s, len);
+
+printf("%s\n", s);
+
+Also reading strings until you hit a zero, so you may avoid sending the
+length before the string.
+
+struct mymsg {
+    int n;
+    float f;
+    double d;
+    char c;
+    char s[100];
+    int a[1000];
+    char* unknown_length_string;
+};
+
+
+struct mymsg m;
+m.n = 1;
+....
+m.a[0] = 9;
+....
+
+m.unknown_length_string = malloc(...)
+scanf("%S", m.unknown_length_string);
+
+write(p[1], &m, sizeof(struct mymsg));
+
+read(p[1], &m, sizeof(struct mymsg));
+
+
+
+int stubborn_read(int fd, char* buf, int len, int nsec) {
+    unsigned int start;
+    int total;
+    int k;
+
+    start = time(NULL);
+    total = 0;
+    while(1) {
+        k = read(fd, buf+total, len-total);
+        if(k < 0) {
+             perror("read failed");
+             return k;
+        }
+        total += k;
+
+        if(total == len) {
+            return total;
+        }
+        if(time(NULL) - start > nsec) {
+            return total;
+        }
+    }
+}
+
+FIFO
+----
+
+These are named pipes. They appear as files on disk. Can be used by
+processes without a common ancestor that creates the FIFO (no more
+pipe-like limitation).
+
+When programming, the FIFOs are used exactly like files. Their creation
+differs though.
+
+FIFO Creation
+-------------
+SH: mkfifo name
+    mknod  name P
+
+C:  mkfifo(char* name, int mode)
+
+FIFO Destruction
+----------------
+SH: rm
+
+C: unlink(char* name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

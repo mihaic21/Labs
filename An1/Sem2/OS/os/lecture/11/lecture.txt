@@ -1,0 +1,94 @@
+Inter-process Communication (IPC)
+=================================
+- message queues
+- shared memory
+- semaphores
+
+|         | msg       | shm       | sem       |
++---------+-----------+-----------+-----------+
+| create  | msgget    | shmget    | semget    |
++---------+-----------+-----------+-----------+
+| operate | msgsnd    | shmat     | semop     |
+|         | msgrcv    | shmdt     |           |
++---------+-----------+-----------+-----------+
+| control | msgctl    | shmctl    | semctl    |
++---------+-----------+-----------+-----------+
+
+- all are identified by so called IDs, which are of type key_t whici is
+  really just an int
+- they are structures in the kernel
+
+- please use as ID your username number, pre-padded with zeros and
+  prefixed with a 1  abie0034 -> 100341 100342
+
+Choosing an ID
+--------------
+1. Simply hardcoded it. The developer chooses a value and uses it
+   everywhere needed, possibly informing other developers of this value
+   - easy to implement
+   - risk collision with others
+
+2. Instead of passing a real ID, use IPC_PRIVATE instead, which tells
+   the OS to choose a free ID by itself
+
+   - how does this generated ID get from the program that creates the
+     IPC (usually the server), to the program that connects to the IPC
+     (usually the client)?
+       - use some other means of communication between the processes ...
+
+3. Use ftok() to generate an ID based on the name/path of your project
+   and a project ID of your choosing
+
+Message Queues
+==============
+- while pipe and fifo were communicaiton mechanisms working
+  stream-oriented, this is message oriented (similar to email)
+
+- its functioning is really more similar to a forum then email, except
+  that reading also removes the message (reading consumes data)
+
+- the message is always a structure that has as first element a long
+  which will be the message type and MUST be a number strictly greater
+  than 0
+
+Semaphores
+==========
+
+- synchronization mechanisms that can work as locks, but can also do
+  much more. they are actually a reserve/release mechanism which can be
+  used to either lock things, or to give turns (this is a special case
+  of producer/consumer), or to control consumer/producer situations
+
+- producer/consumer problem. given a common storage location, multiple
+  processes exchange data through it. we need to insure that nobody
+  writes in the buffer when it is full, and nobody reads fron the buffer
+  when it is empty.
+
+- semget creates a SET of semaphores, NOT just one. the KEY (ID) refers
+  to the entire set
+
+- semop operates on one, more, or all semaphores in aset all at once. an
+  operation is a number, positive means release, negativ emeans reserve
+
+- the initial value of the semaphore is crucial to its
+  functioning. there is NO default value and you MUST set an initial
+  value before doing anything else
+
+  - if the inital value is 1 then the semaphore acts as a lock/unlock
+    mechanism, and can be used for mutual exclusion. this called a
+    binary semaphore
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

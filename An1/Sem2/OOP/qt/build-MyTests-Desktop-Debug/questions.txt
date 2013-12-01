@@ -1,0 +1,2 @@
+1|what day is it today? a-monday b-tuesday c-wednesday|b
+2|what's your name? a-mihai b-andrei c-cristi|a

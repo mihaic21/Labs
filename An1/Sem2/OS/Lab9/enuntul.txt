@@ -1,0 +1,7 @@
+Implemented the problem from the UPipe-H laboratory.
+In this case, more clients must be considered. The 
+implementation can be make or with shared memory, or with
+message queues. 
+The teacher advisor will establish which from they are 
+mandatory and which are optional.
+

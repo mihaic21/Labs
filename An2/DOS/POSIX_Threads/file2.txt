@@ -1,0 +1,2 @@
+fisier 2 linia 1
+fisier 2 linia 2

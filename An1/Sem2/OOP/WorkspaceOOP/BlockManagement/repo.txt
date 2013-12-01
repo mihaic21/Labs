@@ -1,0 +1,9 @@
+1:22:123:gas
+2:22:323:water
+3:33:42:illuminating
+4:22:87:gas
+5:33:54:others
+6:22:213:others
+7:22:158:water
+8:33:99:illuminating
+9:45:123:heating

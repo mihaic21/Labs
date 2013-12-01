@@ -1,0 +1,30 @@
+                        SYMBOLIC MATHEMATICS
+
+Prolog can be used for solving symbolic and mathematical problems.
+Expressions can be modeled by composite objects. (In the program this
+is demonstrated by EXPR)
+
+In the example, the differentiation is followed by a reduction.
+
+The formulas of differentiation are:
+
+d(K)/dx      = 0.
+d(x)/dx      = 1.
+d(y)/dx      = 0.
+d(F+G)/dx    = d(F)/dx+d(G)/dx.
+d(F-G)/dx    = d(F)/dx-d(G)/dx.
+d(F*G)/dx    = G*d(F)/dx+F*d(G)/dx.
+d(F/G)/dx    = (F*d(G)/dx-G*d(F)/dx)/G^2
+d(F^n)/dx    = n*F^(n-1)*d(F)/dx.
+d(ln(F))/dx  = 1/F*d(F)/dx.
+d(sin(F))/dx = cos(F)*d(F)/dx.
+d(cos(F))/dx = -sin(F)*d(F)/dx.
+d(tan(F))/dx = sec(F)^2*d(F)/dx.
+
+Differentiation is realized by the predicate DIFF. Two parameters are 
+used:
+	1) The original expression
+	2) The differentiated result
+
+Each differentiation-rule has a corresponding rule in the predicate
+diff.

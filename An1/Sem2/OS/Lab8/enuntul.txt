@@ -1,0 +1,6 @@
+It is required a server and one or more clients.
+The server plays with each of client a game of X and 0
+(in a 3x3 matrix one puts X-es, the other 0; wins the one
+which writes first a line, column or diagonal with his
+char). At the end of the each game, the server will
+return the result back to the client.

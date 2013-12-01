@@ -1,0 +1,6 @@
+Create a parent process that gets from the command line
+n arguments arg1, arg2, ... , argn.
+The parent will create n-2 son processes. Each of them
+will receive two arguments i, argi. 
+The file argi will be modified for i>2: will remove from
+the file argi all bytes from file in positions multiple of i.

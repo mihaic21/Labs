@@ -1,0 +1,7 @@
+En,apple,Ro,mar
+En,has,Ro,are
+En,Anna,Ro,Ana
+En,green,Ro,verde
+En,pig,Ro,porc
+En,cat,Ro,pisica
+En,table,Ro,masa

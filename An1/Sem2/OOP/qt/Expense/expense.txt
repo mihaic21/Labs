@@ -1,0 +1,6 @@
+clothes:200
+coffee:10
+food:120
+green tea:30
+ice cream:20
+light:100

@@ -1,0 +1,4 @@
+1,Mihai,14,Family
+2,Iulia,124,Family
+4,Ale Prodan,023856,Friends
+5,Andra Miclaus,10257,Friends

@@ -1,0 +1,7 @@
+En,car,Ro,masina
+En,car,Fr,leCar
+En,muffin,Fr,muffen
+Ro,birou,En,office
+Ro,podea,En,floor
+Ro,sticla,En,bottle
+En,cat,Ro,pisica
