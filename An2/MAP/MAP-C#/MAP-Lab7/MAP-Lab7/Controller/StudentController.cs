@@ -129,6 +129,26 @@ namespace MAP_Lab7.Controller
             return result;
         }
 
+        public int numberOfStudentsGreaterThan(Student student)
+        {
+            Repository.Stack<Student> allStudents = this.repo.getAllElements();
+            int number = 0;
+
+            while (!allStudents.isEmpty())
+                try
+                {
+                    Model.Comparable<Student> comparableStudent = allStudents.pop();
+                    if (comparableStudent.isGreaterThan(student))
+                        number++;
+                }
+                catch (MyException ex)
+                {
+                    System.Console.Out.WriteLine(ex.getMessage());
+                }
+                    
+            return number;
+        }
+
         public String getAllStudents()
         {
             return StudentController.elementsFromStack(this.repo.getAllElements());
