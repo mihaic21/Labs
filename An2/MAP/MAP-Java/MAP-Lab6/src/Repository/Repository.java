@@ -1,5 +1,6 @@
 package Repository;
 
+import Model.*;
 import Utils.MyException;
 
 /**
@@ -45,5 +46,23 @@ public class Repository<T> {
     public Stack<T> getAllElements(){
         return elements.copy();
     }
+
+    public static<T extends Model.Comparable<T>> int noOfElementsGreaterThan(Stack<T> stack, T elem) {
+        Stack<T> temp = stack.copy();
+        int result = 0;
+
+        while (!temp.isEmpty()) {
+            try {
+                T comparableElem = temp.pop();
+                if (comparableElem.isGreaterThan(elem))
+                    result++;
+            } catch (MyException ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
+
+        return result;
+    }
+
 
 }

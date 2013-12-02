@@ -115,22 +115,6 @@ public class Controller {
         return result;
     }
 
-    public int numberOfStudentGreaterThan(Student student) {
-        Stack<Student> allStudents = this.repo.getAllElements();
-        int number = 0;
-
-        while (!allStudents.isEmpty()) {
-            try {
-                Comparable<Student> comparableStudent = allStudents.pop();
-                if (comparableStudent.isGreaterThan(student))
-                    number++;
-            } catch (MyException ex) {
-                System.out.println(ex.getMessage());
-            }
-        }
-
-        return number;
-    }
 
     public static String moveElements(Stack<? extends Student> source, Stack<? super Student> destination) {
         Stack<Student> temp = new Stack<Student>();

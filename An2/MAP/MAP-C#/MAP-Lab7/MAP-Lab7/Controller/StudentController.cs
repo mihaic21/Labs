@@ -129,24 +129,20 @@ namespace MAP_Lab7.Controller
             return result;
         }
 
-        public int numberOfStudentsGreaterThan(Student student)
+        public static void moveElements<W,T>(Repository.Stack<W> source, Repository.Stack<T> destination) where W:T
         {
-            Repository.Stack<Student> allStudents = this.repo.getAllElements();
-            int number = 0;
-
-            while (!allStudents.isEmpty())
-                try
-                {
-                    Model.Comparable<Student> comparableStudent = allStudents.pop();
-                    if (comparableStudent.isGreaterThan(student))
-                        number++;
-                }
-                catch (MyException ex)
-                {
-                    System.Console.Out.WriteLine(ex.getMessage());
-                }
-                    
-            return number;
+            Repository.Stack<T> temp = new Repository.Stack<T>();
+            try
+            {
+                while (!source.isEmpty())
+                    temp.push(source.pop());
+                while (!temp.isEmpty())
+                    destination.push(temp.pop());
+            }
+            catch (MyException e)
+            {
+                System.Console.WriteLine(e.getMessage());
+            }
         }
 
         public String getAllStudents()
@@ -195,8 +191,6 @@ namespace MAP_Lab7.Controller
 
                 this.repo.replaceContent(newStack);
 
-                //Repository<Student> repo = new Repository<Student>(newStack);
-                //this.repo = repo;
             }
             catch (MyException ex)
             {

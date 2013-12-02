@@ -109,21 +109,41 @@ namespace MAP_Lab6.Controller
             return this.repo.getNoOfElements();
         }
 
-        public static String elementsFromStack<T>(MAP_Lab6.Repository.Stack<T> stack)
+        public static String elementsFromStack<T>(Repository.Stack<T> stack)
         {
-            MAP_Lab6.Repository.Stack<T> copy = stack.copy();
+            Repository.Stack<T> copy = stack.copy();
             String result = "\n";
 
             while (!copy.isEmpty())
-                try{
+                try
+                {
                     T element = copy.pop();
                     result += element.ToString();
                     result += "\n";
-                }catch (MyException ex){
+                }
+                catch (MyException ex)
+                {
                     return ex.getMessage();
                 }
 
             return result;
+        }
+
+
+        public static void moveElements<W, T>(Repository.Stack<W> source, Repository.Stack<T> destination) where W : T
+        {
+            Repository.Stack<T> temp = new Repository.Stack<T>();
+            try
+            {
+                while (!source.isEmpty())
+                    temp.push(source.pop());
+                while (!temp.isEmpty())
+                    destination.push(temp.pop());
+            }
+            catch (MyException e)
+            {
+                System.Console.WriteLine(e.getMessage());
+            }
         }
 
         public String getAllStudents()

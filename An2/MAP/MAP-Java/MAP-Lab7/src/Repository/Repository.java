@@ -1,6 +1,7 @@
 package Repository;
 
 import Model.Student;
+import Model.Comparable;
 import Utils.MyException;
 
 import java.io.*;
@@ -104,6 +105,23 @@ public class Repository<T> {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public static<T extends Comparable<T>> int noOfElementsGreaterThan(Stack<T> stack, T elem) {
+        Stack<T> temp = stack.copy();
+        int result = 0;
+
+        while (!temp.isEmpty()) {
+            try {
+                T comparableElem = temp.pop();
+                if (comparableElem.isGreaterThan(elem))
+                    result++;
+            } catch (MyException ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
+
+        return result;
     }
 
 }

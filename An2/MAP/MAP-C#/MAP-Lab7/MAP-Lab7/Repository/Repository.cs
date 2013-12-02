@@ -113,5 +113,20 @@ namespace MAP_Lab7.Repository
             }
         }
 
+        public static int noOfElementsGreaterThan<T>(Repository.Stack<T> stack, T elem) where T : Model.Comparable<T>
+        {
+            int result = 0;
+            Repository.Stack<T> temp = stack.copy();
+
+            while (!temp.isEmpty())
+            {
+                Model.Comparable<T> comparableElem = temp.pop();
+                if (comparableElem.isGreaterThan(elem))
+                    result++;
+            }
+
+            return result;
+        }
+
     }
 }
