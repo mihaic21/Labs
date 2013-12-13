@@ -219,4 +219,14 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
         return stringBuilder.toString();
     }
 
+    public Iterator<Edge<C, V>> getEdges() {
+        HashSet<Edge<C, V>> edges = new HashSet<Edge<C, V>>();
+        for (HashSet<Edge<C, V>> edgesForVertex : inboundEdges.values()) {
+            for (Edge<C, V> edge : edgesForVertex) {
+                edges.add(edge);
+            }
+        }
+        return edges.iterator();
+    }
+
 }

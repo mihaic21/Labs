@@ -4,10 +4,10 @@
     <list default="true" id="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" name="Default" comment="" />
     <ignored path="Graphs-Lab3.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Console.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1385910680554" ignored="false" />
+    <file path="/Console.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1386948892931" ignored="false" />
     <file path="/NiceView.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1385745803398" ignored="false" />
     <file path="/LowestCostWalk.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1385909680337" ignored="false" />
-    <file path="/Controller.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1385909815127" ignored="false" />
+    <file path="/Controller.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1386948834945" ignored="false" />
     <file path="/fragment.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1385909920682" ignored="false" />
     <file path="/Main.java" changelist="6c7b8e38-8d43-4f85-8053-24ff9de3e2c1" time="1385909875684" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,7 +69,94 @@
     <favorites_list name="Graphs-Lab3" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="LowestCostWalk.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lab3_P1/LowestCostWalk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="68" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#864#872#0" expanded="true" />
+                <element signature="e#931#939#0" expanded="true" />
+                <element signature="e#1001#1028#0" expanded="true" />
+                <element signature="e#1084#1101#0" expanded="true" />
+                <element signature="e#2165#2173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinimumCostWalksFinder.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lab3_P1/MinimumCostWalksFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="18" selection-start="515" selection-end="515" vertical-scroll-proportion="0.6052632">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#650#667#0" expanded="true" />
+                <element signature="e#743#762#0" expanded="true" />
+                <element signature="e#824#851#0" expanded="true" />
+                <element signature="e#2597#2605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Console.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/Console.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="226" column="54" selection-start="8046" selection-end="8046" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="173" column="25" selection-start="5588" selection-end="5588" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4967#4976#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphInterface.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/GraphInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="43" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Edge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="54" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="229" column="40" selection-start="7963" selection-end="7963" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7724#7736#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -90,6 +177,9 @@
         <option value="$PROJECT_DIR$/src/Lab2_P3/NiceView.java" />
         <option value="$PROJECT_DIR$/src/Lab3_P1/LowestCostWalk.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/Lab3_P1/MinimumCostWalksFinder.java" />
+        <option value="$PROJECT_DIR$/src/Model/GraphInterface.java" />
+        <option value="$PROJECT_DIR$/src/Model/Graph.java" />
         <option value="$PROJECT_DIR$/src/Controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/UI/Console.java" />
       </list>
@@ -127,7 +217,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,17 +364,18 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -340,7 +430,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -355,7 +445,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940239" sideWeight="0.30048466" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940239" sideWeight="0.30048466" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.69951534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -429,13 +519,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Lab2_P3/ConnectedComponents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="22" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="45" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
@@ -480,9 +563,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/GraphFromFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="1" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/GraphException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="0" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="1" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lab3_P1/LowestCostWalk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="416" selection-end="416" vertical-scroll-proportion="0.5320946">
+        <state line="43" column="68" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#864#872#0" expanded="true" />
@@ -494,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/GraphFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="1" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="54" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
@@ -508,53 +605,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="84" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/GraphException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="0" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/GraphInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+        <state line="50" column="43" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Vertex.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="1" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="229" column="40" selection-start="7963" selection-end="7963" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7724#7736#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="43" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.107081175">
+        <state line="173" column="25" selection-start="5588" selection-end="5588" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4928#4937#0" expanded="true" />
+            <element signature="e#4967#4976#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Console.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="58" selection-start="6918" selection-end="6918" vertical-scroll-proportion="0.6587838">
+        <state line="226" column="54" selection-start="8046" selection-end="8046" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lab3_P1/MinimumCostWalksFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="515" selection-end="515" vertical-scroll-proportion="0.6052632">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#650#667#0" expanded="true" />
+            <element signature="e#743#762#0" expanded="true" />
+            <element signature="e#824#851#0" expanded="true" />
+            <element signature="e#2597#2605#0" expanded="true" />
           </folding>
         </state>
       </provider>

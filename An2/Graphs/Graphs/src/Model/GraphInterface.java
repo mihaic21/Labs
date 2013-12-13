@@ -48,4 +48,6 @@ public interface GraphInterface<C, V> {
 
     public Boolean containsVertex(V vertex);
 
+    public Iterator<Edge<C, V>> getEdges();
+
 }

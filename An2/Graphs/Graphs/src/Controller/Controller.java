@@ -2,6 +2,7 @@ package Controller;
 
 import Lab2_P3.ConnectedComponents;
 import Lab3_P1.LowestCostWalk;
+import Lab3_P1.MinimumCostWalksFinder;
 import Model.Edge;
 import Model.Graph;
 import Model.GraphException;
@@ -173,6 +174,11 @@ public class Controller {
         } catch (GraphException e) {
             return e.getMessage();
         }
+    }
+
+    public String noOfMinimumCostWalks(int vertex1, int vertex2){
+        MinimumCostWalksFinder finder = new MinimumCostWalksFinder();
+        return finder.findNumberOfMinimumCostWalksFromSourceToDestination(this.graph, new Vertex(vertex1), new Vertex(vertex2)).toString();
     }
 
 }

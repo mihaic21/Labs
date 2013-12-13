@@ -36,6 +36,7 @@ public class Console {
             + "[r] Remove vertex\n"
             + "[f] Find connected components\n"
             + "[l] Find lowest cost walk between two vertices\n"
+            + "[m] Find no of distinct walks of minimum cost between two vertices\n"
             + "[x] Exit! \n\n";
 
     public Console(Controller ctrl){
@@ -63,6 +64,7 @@ public class Console {
             else if ("r".equals(command)) deleteVertex();
             else if ("f".equals(command)) findConnectedComponents();
             else if ("l".equals(command)) lowestWalkBetweenVertices();
+            else if ("m".equals(command)) minimumCostWalkCounter();
             else if ("x".equals(command)) System.exit(0);
             else System.out.println("Invalid command!\n");
         }
@@ -213,6 +215,18 @@ public class Console {
             System.out.println("Give second vertex: ");
             Integer vertex2 = Integer.parseInt(scanner.nextLine().trim());
             System.out.println(ctrl.lowestWalkBetweenVertices(vertex1,vertex2));
+        }catch (NumberFormatException ex){
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    private void minimumCostWalkCounter() {
+        try{
+            System.out.println("Give first vertex: ");
+            Integer vertex1 = Integer.parseInt(scanner.nextLine().trim());
+            System.out.println("Give second vertex: ");
+            Integer vertex2 = Integer.parseInt(scanner.nextLine().trim());
+            System.out.println(ctrl.noOfMinimumCostWalks(vertex1, vertex2));
         }catch (NumberFormatException ex){
             System.out.println(ex.getMessage());
         }
