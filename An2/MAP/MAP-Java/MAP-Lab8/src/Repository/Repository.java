@@ -2,6 +2,7 @@ package Repository;
 
 import Model.HasID;
 import Model.Comparable;
+import Utils.MyException;
 
 import java.io.*;
 import java.util.LinkedHashMap;
@@ -50,17 +51,21 @@ public class Repository<T extends HasID> {
         return temp;
     }
 
-    public void writeToFile(String fileName){
+    public void writeToFile(String fileName) throws MyException {
         try {
             FileWriter out = new FileWriter(fileName);
             //Map<Integer, T> temp = getAllElements();
+            String className;
             for (T elem : elements.values()){
+                className = elem.getClass().toString().split("\\.")[1];
+                out.write(className);
+                out.write(" ");
                 out.write(elem.toString());
                 out.write("\n");
             }
             out.close();
         } catch (IOException ex){
-            ex.printStackTrace();
+            throw new MyException("Error writing to file!");
         }
     }
 
