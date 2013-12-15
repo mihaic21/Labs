@@ -20,9 +20,8 @@ public class MinimumCostWalksFinder {
 
     private final int INFINITE = 9999;
 
-    public Integer findNumberOfMinimumCostWalksFromSourceToDestination(
-            GraphInterface<Integer, Vertex> graph, Vertex source,
-            Vertex destination) {
+    public Integer findNumberOfMinimumCostWalksFromSourceToDestination
+            (GraphInterface<Integer, Vertex> graph, Vertex source, Vertex destination) {
 
         Map<Vertex, Integer> distances = new HashMap<Vertex, Integer>();
         ArrayList<ArrayList<Vertex>> pathsForDestination = new ArrayList<ArrayList<Vertex>>();
