@@ -11,7 +11,7 @@ namespace Partial
     {
         static void Main(string[] args)
         {
-            Repository.Repository<Leguma> repo = new Repository.Repository<Leguma>();
+            Repository.RepoInterface<Leguma> repo = new Repository.Repository<Leguma>();
             Controller.Controller ctrl = new Controller.Controller(repo);
         }
     }

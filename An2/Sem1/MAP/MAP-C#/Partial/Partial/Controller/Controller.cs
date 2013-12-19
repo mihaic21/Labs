@@ -12,9 +12,9 @@ namespace Partial.Controller
 {
     class Controller
     {
-        private Repository.Repository<Leguma> repo;
+        private Repository.RepoInterface<Leguma> repo;
 
-        public Controller(Repository.Repository<Leguma> repo)
+        public Controller(Repository.RepoInterface<Leguma> repo)
         {
             this.repo = repo;
             this.readFromFile("input.txt");
