@@ -1,0 +1,13 @@
+(defun lin(l)
+  (prog()
+    label
+    (cond
+     ((null l) (return t))
+     ((not (atom (car l))) (return nil))
+    )
+  (setq l (cdr l))
+  (go label)
+  )
+)
+
+(lin '(1 2 3 4))

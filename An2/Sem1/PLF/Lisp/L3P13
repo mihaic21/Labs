@@ -1,0 +1,10 @@
+(defun subst_depth(enew eold l)
+  (cond
+   ((null l) nil)
+   ((eq eold l) enew)
+   ((atom l) l)
+   (t (cons (subst enew eold (car l)) (subst enew eold (cdr l))))
+   )
+)
+
+(subst_depth '5 '3 '(1 2 (3) 3 4))

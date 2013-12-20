@@ -1,0 +1,11 @@
+(defun get_max(l)
+  (cond 
+    ((null l) -100)
+    ((numberp l) l)
+    ((atom l) -100)
+    (t (apply 'max (mapcar 'get_max l)))
+  )
+)
+
+
+(get_max '(a (2) (c (d (f (10) (g)) (5)))))

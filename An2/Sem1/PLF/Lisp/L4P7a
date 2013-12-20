@@ -1,0 +1,14 @@
+(defun substs (eo en ll)
+  (prog (l)
+    (setq l ll)
+    label
+    (cond
+     ((null l) (return ll))
+     ((equal (car l) eo) (setf (car l) en))
+     )
+   (setq l (cdr l))
+   (go label)
+   )
+)
+
+(substs '2 '3 '(1 2 3 2 4))

@@ -1,0 +1,9 @@
+(defun sum(l1 l2)
+   (cond
+     ((null l1) nil)
+     ((null l2) nil)
+     (t (cons (+ (car l1) (car l2)) (sum (cdr l1) (cdr l2))))
+   )
+)
+
+(sum '(1 2 3) '(1 2 3))

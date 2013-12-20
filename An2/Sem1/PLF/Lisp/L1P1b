@@ -1,0 +1,10 @@
+(defun invers(l c)
+	(cond
+	((null l) (reverse c))
+	((atom (car l)) (invers (cdr l) (append c (list( car l)))))
+	(t (append (reverse c) (append (list(invers (car l) () )) (invers (cdr l) ()))))
+	)
+)
+
+
+(invers '(a b c (d (e f) g h i)) ())

@@ -1,0 +1,12 @@
+(defun get_list(l)
+  (cond
+    ((NULL l) l)
+    ((atom l) (list l))
+    (t (mapcan 'get_list l))
+  )
+)
+
+(get_list '(1 2 3 4 (5 6) 8))
+
+
+

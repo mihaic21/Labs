@@ -1,0 +1,9 @@
+(defun level(e l)
+  (cond
+   ((null l) -100) 
+   ((equal (car l) e) 0)
+   (t (max (+ 1 (level e (cadr l)))(+ 1 (level e (caddr l)))))
+  )
+)
+
+(level 'D '(A (B) (C (D) (E))))
