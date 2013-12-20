@@ -19,7 +19,7 @@ namespace Partial.Model
 
         public String getMyClass()
         {
-            return this.GetType().Name;
+            return this.GetType().Name.ToString();
         }
 
         public float getWeight()

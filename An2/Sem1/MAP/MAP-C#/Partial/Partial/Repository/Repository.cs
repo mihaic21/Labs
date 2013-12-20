@@ -6,9 +6,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
+using Partial.Model;
+
 namespace Partial.Repository
 {
-    class Repository<T> : RepoInterface<T>
+    class Repository<T> : RepoInterface<T> where T : Leguma
     {
         private LinkedList<T> elements;
 
@@ -24,7 +26,7 @@ namespace Partial.Repository
                 StreamWriter writer = new StreamWriter("output.txt");
                 foreach (T elem in elementsToWrite)
                 {
-                    writer.WriteLine(elem.ToString());
+                    writer.WriteLine(elem.toString());
                 }
                 writer.Close();
             }
