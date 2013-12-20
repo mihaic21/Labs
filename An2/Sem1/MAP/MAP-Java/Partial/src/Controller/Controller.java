@@ -1,10 +1,7 @@
 package Controller;
 
-import Model.Cires;
-import Model.Mar;
-import Model.Par;
-import Model.Pom;
-import Repository.Repository;
+import Model.*;
+import Repository.*;
 import Utils.MyException;
 
 import java.io.BufferedReader;
@@ -21,9 +18,9 @@ import java.util.ArrayList;
  */
 public class Controller {
 
-    private Repository repo;
+    private RepoInterface<Pom> repo = new Repository<Pom>();
 
-    public Controller(Repository repo) {
+    public Controller(RepoInterface<Pom> repo) {
         this.repo = repo;
         try {
             this.readFromFile("input.txt");

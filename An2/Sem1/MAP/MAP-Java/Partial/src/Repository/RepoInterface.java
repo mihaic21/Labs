@@ -14,5 +14,7 @@ public interface RepoInterface<T> {
     public ArrayList<T> getElements();
     public void writeToFile(ArrayList<T> elementsToWrite);
     public void replaceContent(ArrayList<T> content);
+    public void serializeToFile(String fileName);
+    public void deserializeFromFile(String fileName);
 
 }

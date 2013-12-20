@@ -2,8 +2,7 @@ package Repository;
 
 import Model.Pom;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 /**
@@ -13,17 +12,17 @@ import java.util.ArrayList;
  * Time: 10:13 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Repository implements RepoInterface {
+public class Repository<T> implements RepoInterface<T> {
 
-    private ArrayList elements;
+    private ArrayList<T> elements;
 
     @Override
-    public ArrayList getElements() {
+    public ArrayList<T> getElements() {
         return elements;
     }
 
     @Override
-    public void writeToFile(ArrayList elementsToWrite) {
+    public void writeToFile(ArrayList<T> elementsToWrite) {
         try{
             FileWriter out = new FileWriter("output.txt");
             for (Object elem : elementsToWrite){
@@ -37,8 +36,36 @@ public class Repository implements RepoInterface {
     }
 
     @Override
-    public void replaceContent(ArrayList content) {
+    public void replaceContent(ArrayList<T> content) {
         elements = content;
+    }
+
+    @Override
+    public void serializeToFile(String fileName){
+        try{
+            FileOutputStream fileOut = new FileOutputStream(fileName);
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(this.elements);
+            out.close();
+            fileOut.close();
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public void deserializeFromFile(String fileName){
+        try{
+            FileInputStream fileIn = new FileInputStream(fileName);
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            this.elements = (ArrayList<T>) in.readObject();
+            in.close();
+            fileIn.close();
+        }catch (IOException ex){
+            ex.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
 }
