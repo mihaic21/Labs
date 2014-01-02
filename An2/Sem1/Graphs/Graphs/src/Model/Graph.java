@@ -11,24 +11,24 @@ import java.util.Iterator;
  * Time: 6:34 PM
  * To change this template use File | Settings | File Templates.
  */
-public final class Graph<C, V> implements GraphInterface<C, V> {
+public final class Graph<C, V extends Vertex> implements GraphInterface<C, V> {
 
-    private HashSet<V> vertices;
+    private HashMap<Integer, V> vertices;
     private HashMap<V, HashSet<Edge<C, V>>> inboundEdges;
     private HashMap<V, HashSet<Edge<C, V>>> outboundEdges;
 
     public Graph() {
-        vertices = new HashSet<V>();
+        vertices = new HashMap<Integer, V>();
         inboundEdges = new HashMap<V, HashSet<Edge<C, V>>>();
         outboundEdges = new HashMap<V, HashSet<Edge<C, V>>>();
     }
 
     public Graph(GraphInterface<C, V> graph) throws GraphException{
-        vertices = new HashSet<V>();
+        vertices = new HashMap<Integer, V>();
         inboundEdges = new HashMap<V, HashSet<Edge<C, V>>>();
         outboundEdges = new HashMap<V, HashSet<Edge<C, V>>>();
 
-        for (V vertex : graph.getVertices())
+        for (V vertex : graph.getVertices().values())
             addVertex(vertex);
         try{
             for(HashSet<Edge<C, V>> edges : graph.getInboundEdges().values())
@@ -44,8 +44,8 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
 
     @Override
     public void addVertex(V vertex) throws GraphException{
-        if (!vertices.contains(vertex)){
-            vertices.add(vertex);
+        if (!vertices.containsValue(vertex)){
+            vertices.put(vertex.getValue(), vertex);
             inboundEdges.put(vertex, new HashSet<Edge<C, V>>());
             outboundEdges.put(vertex, new HashSet<Edge<C, V>>());
         } else
@@ -54,9 +54,9 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
 
     @Override
     public void addEdge(Edge<C, V> edge) throws GraphException {
-        if (!vertices.contains(edge.getDestination()))
+        if (!vertices.containsValue(edge.getDestination()))
             throw new GraphException("Destination Vertex Not Found!");
-        if (!vertices.contains(edge.getSource()))
+        if (!vertices.containsValue(edge.getSource()))
             throw new GraphException("Source Vertex Not Found!");
         inboundEdges.get(edge.getDestination()).add(edge);
         outboundEdges.get(edge.getSource()).add(edge);
@@ -87,7 +87,7 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
 
     @Override
     public void removeVertex(V vertex) throws GraphException{
-        if (!vertices.contains(vertex))
+        if (!vertices.containsValue(vertex))
             throw new GraphException("Vertex not found!");
 
         for(HashSet<Edge<C, V>> edgesForVertex : inboundEdges.values()){
@@ -125,14 +125,14 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
 
     @Override
     public Integer getInDegree(V vertex) throws GraphException{
-        if (!vertices.contains(vertex))
+        if (!vertices.containsValue(vertex))
             throw new GraphException("Vertex not found!");
         return inboundEdges.get(vertex).size();
     }
 
     @Override
     public Integer getOutDegree(V vertex) throws GraphException{
-        if ( ! vertices.contains(vertex))
+        if ( ! vertices.containsValue(vertex))
             throw new GraphException("Vertex not found!");
         return outboundEdges.get(vertex).size();
     }
@@ -171,7 +171,7 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
     }
 
     @Override
-    public HashSet<V> getVertices(){
+    public HashMap<Integer, V> getVertices(){
         return vertices;
     }
 
@@ -187,13 +187,13 @@ public final class Graph<C, V> implements GraphInterface<C, V> {
 
     @Override
     public Boolean containsVertex(V vertex){
-        return vertices.contains(vertex);
+        return vertices.containsValue(vertex);
     }
 
     @Override
     public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
-        for (V vertex : vertices){
+        for (V vertex : vertices.values()){
             stringBuilder.append(vertex);
             stringBuilder.append(" has next edges\nInbound from: ");
             Iterator<Edge<C, V>> iterator = inboundEdges.get(vertex).iterator();

@@ -26,7 +26,7 @@ public class MinimumCostWalksFinder {
         Map<Vertex, Integer> distances = new HashMap<Vertex, Integer>();
         ArrayList<ArrayList<Vertex>> pathsForDestination = new ArrayList<ArrayList<Vertex>>();
         Map<Vertex, ArrayList<Vertex>> paths = new HashMap<Vertex, ArrayList<Vertex>>();
-        for (Vertex vertex : graph.getVertices()) {
+        for (Vertex vertex : graph.getVertices().values()) {
             distances.put(vertex, INFINITE);
             paths.put(vertex, new ArrayList<Vertex>());
         }

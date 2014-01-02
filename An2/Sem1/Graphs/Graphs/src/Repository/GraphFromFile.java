@@ -7,6 +7,7 @@ import Model.Vertex;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -38,8 +39,9 @@ public class GraphFromFile {
                 int destination = fscanner.nextInt();
                 int cost = fscanner.nextInt();
 
-                Vertex sourceVertex = new Vertex(source);
-                Vertex destinationVertex = new Vertex(destination);
+                HashMap<Integer, Vertex> vertices = graph.getVertices();
+                Vertex sourceVertex = vertices.get(source);
+                Vertex destinationVertex = vertices.get(destination);
                 Edge<Integer, Vertex> edge = new Edge<Integer, Vertex>(sourceVertex, destinationVertex, cost);
                 graph.addEdge(edge);
             }

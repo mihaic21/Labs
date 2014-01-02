@@ -40,7 +40,7 @@ public interface GraphInterface<C, V> {
 
     public Iterator<Edge<C, V>> getInbound(V vertex) throws GraphException;
 
-    public HashSet<V> getVertices();
+    public HashMap<Integer, V> getVertices();
 
     public HashMap<V, HashSet<Edge<C, V>>> getInboundEdges();
 

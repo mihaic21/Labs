@@ -7,9 +7,19 @@ package Model;
  * Time: 6:31 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Vertex {
+public class Vertex implements Comparable<Vertex> {
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
+    }
 
     private Integer value;
+
+    private Integer distance;
 
     public Vertex(Integer value) {
         this.value = value;
@@ -17,6 +27,14 @@ public class Vertex {
 
     public Vertex(Vertex vertex) {
         value = new Integer(vertex.value);
+    }
+
+    public Integer getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Integer distance) {
+        this.distance = distance;
     }
 
     @Override
@@ -48,4 +66,8 @@ public class Vertex {
         return hash;
     }
 
+    @Override
+    public int compareTo(Vertex vertex) {
+        return this.getDistance() - vertex.getDistance();
+    }
 }
