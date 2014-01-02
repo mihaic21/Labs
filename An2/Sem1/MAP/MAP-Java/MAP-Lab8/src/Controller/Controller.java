@@ -90,20 +90,12 @@ public class Controller {
     }
 
     public String deleteStudentsUntilGrade(int grade){
-        Student currStudent = (Student) repo.getTopElement();
-        while (currStudent.average() != grade){
-            repo.removeElement(currStudent);
-            currStudent = (Student) repo.getTopElement();
-        }
-
-        while (repo.getNoOfElements() > 0){
-            currStudent = (Student) repo.getTopElement();
-            if (currStudent.average() == grade)
-                return "Students deleted successfully!";
-            else {
+        Student currStudent;
+        while ((currStudent = (Student) repo.getTopElement()) != null){
+            if (!(currStudent.average() == grade))
                 repo.removeElement(currStudent);
-                currStudent = (Student) repo.getTopElement();
-            }
+            else
+                return "Students deleted successfully!";
         }
 
         return "No student with grade 10 found; all students deleted";

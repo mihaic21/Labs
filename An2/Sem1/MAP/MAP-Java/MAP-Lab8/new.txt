@@ -1,0 +1,7 @@
+Student 1 mihai 6
+GraduateStudent 2 andrei 8 radu 3 4
+UndergraduateStudent 3 ale 8 6
+PhDStudent 4 aron 8 bolo interesant 4
+Student 5 cristi 7
+UndergraduateStudent 6 lala 8 9
+Student 7 zece 10
