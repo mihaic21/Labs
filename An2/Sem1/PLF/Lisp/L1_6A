@@ -1,0 +1,9 @@
+(defun product(l)
+  (cond
+   ((null l) 1)
+   ((numberp (car l)) (* (car l) (product (cdr l))))
+   ((listp (car l)) (* (product (car l)) (product (cdr l))))
+  )
+)
+
+(product '(1 2 (5 6 (7)) 3))

@@ -1,0 +1,16 @@
+(defun search1 (a l)
+  (cond
+   ((null l) nil)
+   (t (or (equal (car l) a) (search1 a (cdr l))))
+  )
+)
+
+(defun united(l1 l2)
+  (cond
+   ((null l1) l2)
+   ((search1 (car l1) l2) (united l2 (cdr l1)))
+   (t (cons (car l1) (united l2 (cdr l1))))
+  )
+)
+
+(write (united '(1 2 3) '(3 4 5)))

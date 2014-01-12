@@ -1,0 +1,8 @@
+(defun reverse1(l)
+  (cond
+   ((null l) nil)
+   (t (append (reverse1 (cdr l)) (list (car l))))
+  )
+)
+
+(write (reverse1 '(1 2 3)))

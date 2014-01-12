@@ -1,0 +1,16 @@
+(defun insert(e l)
+  (cond
+   ((null l) (list e))
+   ((< e (car l)) (cons e l))
+   (t (cons (car l) (insert e (cdr l))))
+  )
+)
+
+(defun sort1(l)
+  (cond
+   ((null (cdr l)) (list (car l)))
+   (t (insert (car l) (sort1 (cdr l))))
+  )
+)
+
+(write (sort1 '(6 3 5 5 10 8 2 4 3 3 5 10)))
