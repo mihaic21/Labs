@@ -3,12 +3,14 @@ package Controller;
 import Lab2_P3.ConnectedComponents;
 import Lab3_P1.LowestCostWalk;
 import Lab3_P1.MinimumCostWalksFinder;
+import Lab5_P1.MaximumCliqueFinder;
 import Model.Edge;
 import Model.Graph;
 import Model.GraphException;
 import Model.Vertex;
 import Repository.GraphFromFile;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -30,9 +32,12 @@ public class Controller {
 
     public String readFromFile(String fileName){
         try {
-            GraphFromFile.readFromFile(this.graph, fileName);
+            GraphFromFile graphFromFile = new GraphFromFile();
+            graphFromFile.getGraph(fileName);
             return "\n";
         } catch (GraphException e) {
+            return e.getMessage();
+        } catch (IOException e){
             return e.getMessage();
         }
     }
@@ -180,5 +185,16 @@ public class Controller {
         MinimumCostWalksFinder finder = new MinimumCostWalksFinder();
         return finder.findNumberOfMinimumCostWalksFromSourceToDestination(this.graph, new Vertex(vertex1), new Vertex(vertex2)).toString();
     }
+
+    public String maxClique(){
+        try {
+            MaximumCliqueFinder<Vertex, Integer> maximumCliqueFinder = new MaximumCliqueFinder<Vertex, Integer>();
+            return "Maximum clique: " + maximumCliqueFinder.find(this.graph);
+        } catch (GraphException e) {
+            return e.getMessage();
+        }
+    }
+
+
 
 }

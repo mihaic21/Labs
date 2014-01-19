@@ -33,7 +33,7 @@ public class LowestCostWalk {
         Map<Vertex, Integer> distances = new HashMap<Vertex, Integer>();
 
 
-        for (Vertex vertex : graph.getVertices().values()){
+        for (Vertex vertex : graph.getVertices()){
             paths.put(vertex, new ArrayList<Vertex>());
             //distances.put(vertex, INFINITY);
             vertex.setDistance(INFINITY);

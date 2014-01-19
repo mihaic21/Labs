@@ -232,5 +232,8 @@ public class Console {
         }
     }
 
+    private void cliqueMaxSize(){
+        System.out.println(this.ctrl.maxClique());
+    }
 
 }

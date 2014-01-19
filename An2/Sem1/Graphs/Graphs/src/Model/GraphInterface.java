@@ -3,6 +3,7 @@ package Model;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -40,7 +41,7 @@ public interface GraphInterface<C, V> {
 
     public Iterator<Edge<C, V>> getInbound(V vertex) throws GraphException;
 
-    public HashMap<Integer, V> getVertices();
+    public HashSet<V> getVertices();
 
     public HashMap<V, HashSet<Edge<C, V>>> getInboundEdges();
 
@@ -49,5 +50,7 @@ public interface GraphInterface<C, V> {
     public Boolean containsVertex(V vertex);
 
     public Iterator<Edge<C, V>> getEdges();
+
+    public Set<V> getAdjacentVertices(V vertex) throws GraphException;
 
 }

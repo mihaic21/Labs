@@ -1,57 +1,61 @@
 package Repository;
 
-import Model.Edge;
-import Model.Graph;
-import Model.GraphException;
-import Model.Vertex;
+import Model.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
-/**
- * Created with IntelliJ IDEA.
- * User: mihai
- * Date: 11/29/13
- * Time: 6:38 PM
- * To change this template use File | Settings | File Templates.
- */
 public class GraphFromFile {
-    private static Graph graph;
-    private static String fileName;
 
-    public static void readFromFile(Graph givenGraph, String givenFileName) throws GraphException{
-        try{
-            graph = givenGraph;
-            fileName = givenFileName;
+    private Graph<Integer, Vertex> graph;
+    private String filename;
 
-            File file = new File(fileName);
-            Scanner fscanner = new Scanner(file);
-            int numberOfVertices = fscanner.nextInt();
-            int numberOfEdges = fscanner.nextInt();
+    public GraphFromFile() {
+        this.graph = null;
+    }
 
-            for (int counter = 0; counter < numberOfVertices; counter++)
-                graph.addVertex(new Vertex(counter));
+    public GraphInterface<Integer, Vertex> getGraph(String fileName)
+            throws IOException, GraphException {
+        this.filename = fileName;
+        graph = new Graph<Integer, Vertex>();
 
-            for (int counter = 0; counter< numberOfEdges; counter++){
-                int source = fscanner.nextInt();
-                int destination = fscanner.nextInt();
-                int cost = fscanner.nextInt();
+        BufferedReader buffer = new BufferedReader(new FileReader(filename));
+        String firstLine = buffer.readLine();
+        String[] parts = firstLine.split(" ");
+        Integer numberOfEdges = Integer.parseInt(parts[1]);
 
-                HashMap<Integer, Vertex> vertices = graph.getVertices();
-                Vertex sourceVertex = vertices.get(source);
-                Vertex destinationVertex = vertices.get(destination);
-                Edge<Integer, Vertex> edge = new Edge<Integer, Vertex>(sourceVertex, destinationVertex, cost);
-                graph.addEdge(edge);
-            }
-        }catch(FileNotFoundException ex){
-            throw new GraphException("File not found!");
-        }catch(GraphException ex){
-            throw new GraphException(ex.getMessage());
+        parseLinesIntoEdges(buffer, numberOfEdges);
+        return graph;
+    }
+
+    private void parseLinesIntoEdges(BufferedReader buffer,
+                                     Integer numberOfEdges) throws IOException, GraphException {
+        for (Integer lineNumber = 0; lineNumber < numberOfEdges; lineNumber++) {
+            parseSingleLineIntoEdge(buffer);
         }
+    }
 
-
+    private void parseSingleLineIntoEdge(BufferedReader buffer)
+            throws IOException, GraphException {
+        String line = buffer.readLine();
+        String[] edgeParts = line.split(" ");
+        Vertex source = new Vertex(Integer.parseInt(edgeParts[0]));
+        if (!graph.containsVertex(source)) {
+            graph.addVertex(source);
+        }
+        Vertex destination = new Vertex(Integer.parseInt(edgeParts[1]));
+        if (!graph.containsVertex(destination)) {
+            graph.addVertex(destination);
+        }
+        Integer cost = Integer.parseInt(edgeParts[2]);
+        Edge<Integer, Vertex> edge = new Edge<Integer, Vertex>(source,
+                destination, cost);
+        try {
+            graph.addEdge(edge);
+        } catch (GraphException exception) {
+            System.out.println(exception.getMessage());
+        }
     }
 
 }

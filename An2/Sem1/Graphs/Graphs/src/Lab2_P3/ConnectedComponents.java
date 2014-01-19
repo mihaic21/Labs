@@ -31,7 +31,7 @@ public class ConnectedComponents {
         exploredVertices = new Stack<Vertex>();
         exploredEdges = new ArrayList<Edge<Integer, Vertex>>();
         verticesInComponents = new HashMap<Vertex, Integer>();
-        for (Vertex vertex : graph.getVertices().values())
+        for (Vertex vertex : graph.getVertices())
             verticesInComponents.put(vertex, NO_COMPONENT);
 
         currentComponentNumber = 1;
