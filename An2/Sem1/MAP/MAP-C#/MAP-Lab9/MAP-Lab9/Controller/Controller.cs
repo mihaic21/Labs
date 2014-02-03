@@ -202,6 +202,7 @@ namespace MAP_Lab9.Controller
                 }
 
                 repo.replaceContent(newDict);
+                sr.Close();
 
             }
             catch (MyException ex)

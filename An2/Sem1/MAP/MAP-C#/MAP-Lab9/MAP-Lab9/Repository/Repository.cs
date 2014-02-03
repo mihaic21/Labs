@@ -57,8 +57,12 @@ namespace MAP_Lab9.Repository
             {
                 StreamWriter writer = new StreamWriter(fileName);
                 IDictionary<int, T> temp = this.getAllElements();
+                String className;
                 foreach (T element in temp.Values)
-                    writer.WriteLine(element.ToString());
+                {
+                    className = element.GetType().Name;
+                    writer.WriteLine(className + " " + element.ToString());
+                }
                 writer.Close();
             }
             catch (IOException)

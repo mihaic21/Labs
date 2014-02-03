@@ -172,7 +172,7 @@ namespace MAP_Lab8.Controller
                 }
 
                 repo.replaceContent(newDict);
-
+                sr.Close();
             }
             catch (MyException ex)
             {
