@@ -1,0 +1,1 @@
+fa un program C care sa numere liniile si caracterele din fisierul passwd
