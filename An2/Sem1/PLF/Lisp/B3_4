@@ -1,0 +1,11 @@
+(defun replaceLevel(l k level)
+  (cond
+   ((null l) nil)
+   ((and (atom (car l)) (= k level)) (append (list 0) (replaceLevel (cdr l) k level)))
+   ((and (atom (car l)) (> k level)) (append (list (car l)) (replaceLevel (cdr l) k level)))
+   ((and (list (car l)) (= k level)) (append (list (car l)) (replaceLevel (cdr l) k level)))
+   ((and (list (car l)) (> k level)) (append (list (replaceLevel (car l) k (+ level 1))) (replaceLevel (cdr l) k level)))
+   )
+)
+
+(write (replaceLevel '(a (1 (2 b)) (c (d))) 3 1))
