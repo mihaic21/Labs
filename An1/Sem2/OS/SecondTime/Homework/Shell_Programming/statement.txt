@@ -1,0 +1,7 @@
+79. a)
+Write a shell script that continuously reads words from the keyboard and 
+deletes them from all the files given in the command line.
+
+79. b)
+Write a shell script that takes pairs of parameters (a filename and a number 
+n) and for each pair will verify if the size of the file equals the number n
