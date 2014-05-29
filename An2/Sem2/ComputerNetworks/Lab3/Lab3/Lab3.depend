@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1400745220 source:/mnt/Data/Programming/Labs/An2/Sem2/Computer Networks/Lab3/Lab3/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<error.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<string.h>
+	<unistd.h>
+	<pthread.h>
+	<netdb.h>
+	<sys/stat.h>
+	<iostream>
+	<ctime>
+	<map>
+	<list>
+
