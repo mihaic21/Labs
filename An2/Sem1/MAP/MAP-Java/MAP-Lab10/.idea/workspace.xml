@@ -82,13 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeForm.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.60350317" vertical-offset="2786" max-vertical-offset="3435">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="3510" max-vertical-offset="3780">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="46" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+            <state line="19" column="47" selection-start="516" selection-end="516" vertical-scroll-proportion="0.57863504" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -133,10 +131,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1303" />
-    <option name="height" value="773" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,6 +162,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -271,7 +270,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,19 +342,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -382,6 +367,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -482,7 +480,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -495,6 +493,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -504,7 +503,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44257274" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34504792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -529,6 +527,83 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="47" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="48" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="31" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="3510" max-vertical-offset="3780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/GraduateStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="47" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="48" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="31" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="3300" max-vertical-offset="3465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/GraduateStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="48" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1755">
@@ -546,9 +621,7 @@
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="2816" max-vertical-offset="3465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,9 +656,7 @@
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="232" column="8" selection-start="8093" selection-end="8093" vertical-scroll-proportion="0.0" vertical-offset="3480" max-vertical-offset="3780">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,9 +691,7 @@
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="232" column="8" selection-start="8093" selection-end="8093" vertical-scroll-proportion="0.0" vertical-offset="3300" max-vertical-offset="3465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -657,9 +726,7 @@
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="232" column="8" selection-start="8093" selection-end="8093" vertical-scroll-proportion="0.0" vertical-offset="3300" max-vertical-offset="3465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,9 +761,7 @@
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="232" column="8" selection-start="8093" selection-end="8093" vertical-scroll-proportion="0.0" vertical-offset="3139" max-vertical-offset="3780">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,9 +796,7 @@
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="8" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="750">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,13 +831,6 @@
     <entry file="file://$PROJECT_DIR$/src/Repository/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="48" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
@@ -816,10 +872,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/HomeForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.60350317" vertical-offset="3131" max-vertical-offset="3780">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="234" column="41" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="2786" max-vertical-offset="3435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="47" selection-start="516" selection-end="516" vertical-scroll-proportion="0.57863504" vertical-offset="0" max-vertical-offset="420">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,6 +971,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="se.expertsystem.intellij.aop.aspectj.AspectJProjectComponent">
+    <setting name="isActivated" value="false" />
   </component>
 </project>
 
