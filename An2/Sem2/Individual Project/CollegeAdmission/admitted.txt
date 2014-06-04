@@ -1,0 +1,12 @@
+1930121125574;Mihai Costiug;informatica
+2940406748957;Rucsandra Pintea;publicitate
+1881212748940;Razvan Dumitrescu;economie
+1947383928746;Tudor Vasiliu;economie
+2900421450012;Ana Enache;economie
+1890111234765;Mihai Costea;biologie
+2930203847383;Ramona Centea;informatica
+2871011746381;Raluca Albu;informatica
+2881212645732;Cristina Pop;informatica
+1930708846385;Razvan Todea;matematica
+1751212849201;Tudor Vladimirescu;informatica
+1883627123474;Andrei Popa;matematica

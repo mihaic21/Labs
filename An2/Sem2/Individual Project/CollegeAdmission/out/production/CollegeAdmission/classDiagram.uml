@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="419.9999999999999" y="1020.3333333333333">Controller.CandidateController</node>
+    <node x="433.33333333333303" y="668.3333333333335">Utils.Validator</node>
+    <node x="-7.999999999999545" y="1003.6666666666667">UI.CandidatesForm</node>
+    <node x="-212.33333333333292" y="412.66666666666674">UI.FacultyForm</node>
+    <node x="1195.0000000000002" y="697.9999999999994">Repository.Repository</node>
+    <node x="788.25" y="383.5">Model.FailedCandidate</node>
+    <node x="216.66666666666663" y="757.666666666667">Utils.MyException</node>
+    <node x="-196.9999999999999" y="791.6666666666667">UI.HomeForm</node>
+    <node x="-447.99999999999966" y="801.6666666666667">Main</node>
+    <node x="-197.33333333333303" y="-196.3333333333328">UI.AddCandidateForm</node>
+    <node x="-390.0" y="52.66666666666691">Controller.FacultyController</node>
+    <node x="1123.3333333333323" y="253.3333333333332">Repository.RepoInterface</node>
+    <node x="-192.9999999999999" y="890.0">Tests.UnitTest</node>
+    <node x="171.00000000000045" y="-206.33333333333277">UI.AddSectionForm</node>
+    <node x="249.00000000000045" y="104.33333333333371">Model.Section</node>
+    <node x="558.666666666667" y="-33.333333333333314">Model.Candidate</node>
+    <node x="546.25" y="373.0">Model.AdmittedCandidate</node>
+    <node x="466.0" y="-133.9999999999994">UI.EditForm</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="UI.AddCandidateForm" target="Model.Candidate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Controller.FacultyController" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.HomeForm" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Main" target="Repository.Repository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.HomeForm" target="Controller.FacultyController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Controller.CandidateController" target="Utils.MyException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Tests.UnitTest" target="Controller.FacultyController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Main" target="UI.HomeForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Tests.UnitTest" target="Repository.Repository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.HomeForm" target="Controller.CandidateController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.CandidatesForm" target="Controller.CandidateController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Utils.Validator" target="Utils.MyException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.FacultyForm" target="UI.HomeForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.AddCandidateForm" target="UI.FacultyForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Tests.UnitTest" target="Utils.MyException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.HomeForm" target="UI.FacultyForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.FacultyForm" target="UI.AddSectionForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.AddSectionForm" target="UI.FacultyForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Controller.CandidateController" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Main" target="Tests.UnitTest">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.AddSectionForm" target="Model.Section">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Tests.UnitTest" target="Model.Section">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Repository.Repository" target="Repository.RepoInterface">
+      <point x="0.0" y="-161.5" />
+      <point x="0.0" y="161.5" />
+    </edge>
+    <edge source="Tests.UnitTest" target="Model.Candidate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Tests.UnitTest" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Repository.Repository" target="Model.Candidate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.HomeForm" target="UI.CandidatesForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Model.FailedCandidate" target="Model.Candidate">
+      <point x="0.0" y="-25.0" />
+      <point x="865.75" y="348.0" />
+      <point x="876.25" y="348.0" />
+      <point x="114.75" y="161.5" />
+    </edge>
+    <edge source="UI.FacultyForm" target="UI.AddCandidateForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Model.AdmittedCandidate" target="Model.Candidate">
+      <point x="0.0" y="-35.5" />
+      <point x="657.25" y="348.0" />
+      <point x="646.75" y="348.0" />
+      <point x="-114.75" y="161.5" />
+    </edge>
+    <edge source="Controller.FacultyController" target="Model.AdmittedCandidate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Repository.Repository" target="Model.Section">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.CandidatesForm" target="UI.HomeForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Controller.FacultyController" target="Model.FailedCandidate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="UI.FacultyForm" target="Controller.FacultyController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1046.3333333333321" y="603.6666666666658" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

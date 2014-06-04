@@ -1,0 +1,5 @@
+informatica;5
+matematica;2
+publicitate;1
+economie;3
+biologie;3

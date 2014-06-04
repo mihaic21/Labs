@@ -1,0 +1,14 @@
+2900421450012;Ana Enache;Bucuresti;9.6;7.5;publicitate,economie
+1930104637393;Andrei Pop;Baia Mare;8.5;5.7;economie
+1930708846385;Razvan Todea;Cluj;7.0;8.0;matematica,informatica
+1235432123438;Gheorghe Gheorghiu;Dej;5.0;5.0;matematica,publicitate,economie
+1881212748940;Razvan Dumitrescu;Bucuresti;10.0;9.0;economie,publicitate
+2940406748957;Rucsandra Pintea;Targu Mures;10.0;10.0;publicitate,economie,matematica
+2881212645732;Cristina Pop;Sighet;8.0;8.0;informatica
+1947383928746;Tudor Vasiliu;Piatra Neamt;9.0;9.0;economie
+1883627123474;Andrei Popa;Constanta;7.5;6.34;informatica,matematica
+1751212849201;Tudor Vladimirescu;Targu Neamt;8.65;5.5;informatica,economie,publicitate,matematica
+2871011746381;Raluca Albu;Apuseni;9.0;7.0;informatica
+2930203847383;Ramona Centea;Alba Iulia;6.0;10.0;informatica,economie
+1890111234765;Mihai Costea;Deva;7.0;9.0;biologie
+1930121125574;Mihai Costiug;Cluj;10.0;10.0;informatica,publicitate
