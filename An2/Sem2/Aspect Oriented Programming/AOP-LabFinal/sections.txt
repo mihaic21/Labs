@@ -1,0 +1,8 @@
+opt1;10
+opt2;20
+opt3;3
+opt4;14
+opt5;6
+opt6;1
+info;2
+newSection;2

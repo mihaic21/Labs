@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="repository" class="Repository.RepositoryDAO">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <bean id="controller" class="Controller.Controller">
+        <constructor-arg ref="repository"></constructor-arg>
+    </bean>
+    <bean id="homeForm" class="UI.HomeForm">
+        <constructor-arg ref="controller"></constructor-arg>
+    </bean>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${db.driver}"></property>
+        <property name="url" value="${db.url}"></property>
+        <property name="username" value="${db.username}"></property>
+        <property name="password" value="${db.password}"></property>
+    </bean>
+    <context:property-placeholder location="selling-agent.properties"></context:property-placeholder>
+</beans>

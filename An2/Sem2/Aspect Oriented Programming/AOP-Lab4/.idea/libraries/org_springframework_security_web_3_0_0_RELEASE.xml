@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.springframework.security.web-3.0.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Intelli J/Extra/spring_security/org.springframework.security.web-3.0.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

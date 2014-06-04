@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cglib-3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Intelli J/Extra/spring_security/cglib-3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

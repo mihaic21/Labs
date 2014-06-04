@@ -1,0 +1,13 @@
+1930121125771;name;address;10.0;10.0;opt2,opt1
+2900421450012;Ana Are Mere;Bucuresti;9.6;7.5;opt2,opt1
+1930104637393;name;address;8.5;5.7;opt2,opt1
+1930708846385;nameee;addressss;7.0;8.0;opt2,opt1
+1235432123438;js;jf;5.0;5.0;opt6,opt4,opt1
+1881212748940;saf;fdsgs;10.0;9.0;opt5,opt6,opt3,opt1
+2940406748957;Ruri;kashf;10.0;10.0;opt1,opt4,opt3
+1881212645732;Cristina;adresa;8.0;8.0;opt5,opt3,opt6
+1947383928746;name;asda;9.0;9.0;opt1,opt4,opt3
+1883627123474;Andrei Pop;Baia Mare;7.5;6.34;opt5,opt3
+2751212849201;Tudor Vasiliu;Piatra Neamt;8.65;5.5;opt4,opt6
+2871011746381;Raluca;acolo;9.0;7.0;opt4,opt6
+2930203847383;Raluca;Alba Iulia;6.0;10.0;info

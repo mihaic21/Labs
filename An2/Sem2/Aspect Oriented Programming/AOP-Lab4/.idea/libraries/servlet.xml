@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="servlet">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Intelli J/Extra/spring_security/servlet.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
