@@ -2,5 +2,4 @@ this is the file i have created
 in order to test this program
 i am very much liking searching
 for words in c programming language
-in c we have no strings and that
-is really hardcore
+i love manipulating strings in c
