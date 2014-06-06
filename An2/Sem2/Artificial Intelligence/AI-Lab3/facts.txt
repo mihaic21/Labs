@@ -1,0 +1,23 @@
+﻿Temp1-temp = 0
+Temp2-temp > 30
+Temp3-temp < 60
+Temp4-60< temp < 80
+Temp5-temp > 80
+
+Unit1-unit > 1
+Unit2-unit < 5
+Unit3-unit > 5
+
+Eff1-low
+Eff2-medium
+Eff3-high
+
+Fur1-not functioning
+Fur2-functioning
+Fur3-full
+
+Min1-strike
+Min2-not strike
+
+Inf1-low
+Inf2-high

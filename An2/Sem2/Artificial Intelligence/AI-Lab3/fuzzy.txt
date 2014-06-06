@@ -1,0 +1,30 @@
+##temp
+freezing 20 20 30 50
+cold 30 50 70
+medium 60 70 80
+warm 70 90 110
+hot 90 110 120 120
+##capacity
+low 0 0 5
+medium 3 5 7
+high 7 10 10
+##efficiency
+low 0 0 10
+medium 5 10 15
+high 10 20 20
+##table
+freezing low low
+freezing medium medium
+freezing high high
+cold low low
+cold medium medium
+cold high high
+medium low low
+medium medium low
+medium high low
+warm low low
+warm medium low
+warm high low
+hot low low
+hot medium low
+hot high low

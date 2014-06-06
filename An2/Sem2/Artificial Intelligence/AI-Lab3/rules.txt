@@ -1,0 +1,9 @@
+﻿R1 Temp3 AND Unit2 => Eff2
+R2 Unit3 => Fur3
+R3 Temp3 AND Unit3 => Eff3
+R4 Fur1 => Temp1
+R5 Min1 => Unit1
+R6 Temp5 OR Temp4 AND Unit3 => Eff3
+R7 Fur2 => Temp2
+R8 Inf1 => Min2
+R9 Temp4 AND Unit2 => Eff1
