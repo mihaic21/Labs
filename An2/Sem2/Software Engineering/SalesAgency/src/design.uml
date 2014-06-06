@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-254.33333333333326" y="-1451.9999999999998">Repository.RepoInterface</node>
+    <node x="29.0" y="238.1428571428571">Main</node>
+    <node x="-296.00000000000057" y="-2086.999999999999">Repository.RepositoryDB</node>
+    <node x="155.66666666666674" y="-601.9999999999998">Controller.SalesmanController</node>
+    <node x="-513.6190476190475" y="-686.5238095238094">Controller.AdminController</node>
+    <node x="10.0" y="121.0">View.HomeForm</node>
+    <node x="295.9047619047619" y="-199.71428571428567">View.SalesmanForm</node>
+    <node x="0.0" y="0.0">View.LoginForm</node>
+    <node x="-689.047619047619" y="-243.52380952380946">View.AdminForm</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="View.AdminForm" target="View.LoginForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Repository.RepositoryDB" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Controller.SalesmanController" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.LoginForm" target="View.AdminForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.SalesmanForm" target="View.LoginForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.LoginForm" target="Controller.SalesmanController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.LoginForm" target="View.SalesmanForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.HomeForm" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Main" target="View.HomeForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.AdminForm" target="Controller.AdminController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.LoginForm" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.SalesmanForm" target="Controller.SalesmanController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.LoginForm" target="View.HomeForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.HomeForm" target="View.LoginForm">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Main" target="Repository.RepositoryDB">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Controller.AdminController" target="Repository.RepoInterface">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="View.LoginForm" target="Controller.AdminController">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="172.33333333333326" y="-769.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
