@@ -1,0 +1,7 @@
+BEGIN TRANSACTION
+
+UPDATE Project SET ProjName = 'projName' WHERE ProjID = 1
+WAITFOR DELAY '00:00:05'
+UPDATE Developer SET DevName = 'newName' WHERE DevID = 1
+
+COMMIT TRANSACTION

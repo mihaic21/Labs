@@ -1,0 +1,151 @@
+# depslib dependency file v1.0
+1173341796 source:/mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Intersection.cpp
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Line.hpp"
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Intersection.hpp
+	<iostream>
+	"Vector.hpp"
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Vector.hpp
+	<cmath>
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Geometry.hpp
+	"Color.hpp"
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Color.hpp
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Line.hpp
+	"Vector.hpp"
+
+1173341861 source:/mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Sphere.cpp
+	"Sphere.hpp"
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Sphere.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Color.hpp"
+
+1412771758 source:/mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/main.cpp
+	<cmath>
+	<iostream>
+	<string>
+	"Vector.hpp"
+	"Line.hpp"
+	"Geometry.hpp"
+	"Sphere.hpp"
+	"Image.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
+	"Material.hpp"
+	"Scene.hpp"
+
+1412153445 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Image.hpp
+	<iostream>
+	<fstream>
+	"Color.hpp"
+	<string>
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Material.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
+
+1173341796 /mnt/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Scene.hpp
+	"Geometry.hpp"
+	"Sphere.hpp"
+
+1173341796 source:/media/shobo/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Intersection.cpp
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Line.hpp"
+
+1173341796 /media/shobo/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Intersection.hpp
+	<iostream>
+	"Vector.hpp"
+
+1173341796 /media/shobo/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Vector.hpp
+	<cmath>
+
+1173341796 /media/shobo/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Geometry.hpp
+	"Color.hpp"
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+
+1173341796 /media/shobo/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Color.hpp
+
+1173341796 /media/shobo/Data/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Line.hpp
+	"Vector.hpp"
+
+1173341796 source:/mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Intersection.cpp
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Line.hpp"
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Intersection.hpp
+	<iostream>
+	"Vector.hpp"
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Vector.hpp
+	<cmath>
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Geometry.hpp
+	"Color.hpp"
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Color.hpp
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Line.hpp
+	"Vector.hpp"
+
+1414586420 source:/mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/main.cpp
+	<cmath>
+	<iostream>
+	<string>
+	"Vector.hpp"
+	"Line.hpp"
+	"Geometry.hpp"
+	"Sphere.hpp"
+	"Image.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
+	"Material.hpp"
+	"Scene.hpp"
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Sphere.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Color.hpp"
+
+1412153445 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Image.hpp
+	<iostream>
+	<fstream>
+	"Color.hpp"
+	<string>
+
+1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Material.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
+
+1414586783 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Scene.hpp
+	"Geometry.hpp"
+	"Sphere.hpp"
+
+1414586093 source:/mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Sphere.cpp
+	<cmath>
+	"Sphere.hpp"
+

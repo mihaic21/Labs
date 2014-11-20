@@ -1,0 +1,10 @@
+program 2
+if 3
+else 4
+while 5
+int 6
+string 7
+char 8
+boolean 9
+read 10
+write 11

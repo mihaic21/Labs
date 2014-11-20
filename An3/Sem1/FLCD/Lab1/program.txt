@@ -1,0 +1,14 @@
+program {
+    int number;
+    string text;
+    read number;
+    read text;
+    if (number > 10){
+        write text;
+    } else {
+        while (number >= 0) {
+            write number;
+            number = number - 1;
+        }
+    }
+}
