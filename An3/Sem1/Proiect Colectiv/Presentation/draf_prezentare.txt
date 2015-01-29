@@ -1,0 +1,34 @@
+Prezentarea echipei:
+-membri
+-task-uri
+
+
+Avantaje aplicatie:
+-interfata simpla si usor de folosit
+-extensibila pe mobil
+-free open source libraries
+-orice platforma
+-???istoric complex, tine minte id
+-login (securitate)
+-descarcare cerere in document de tip word
+-modularitate; se bazeaza pe un schelet standard in industrie
+
+
+
+Tehnologii folosite (back to front):
+-mysql
+-glassfish
+-JPA
+-java (servlets, jsp)
+-javascript (jquery)
+-
+
+
+Back end - how it works (cimpean):
+-
+
+Front end - how it works (ligia):
+-
+
+
+Demo

@@ -1,0 +1,4 @@
+S,A,B,C,D
++,*,a,(,)
+S
+S->BA,A->+BA|E,B->DC,C->*DC|E,D->(S)|a

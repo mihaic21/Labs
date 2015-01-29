@@ -42,51 +42,89 @@ const Intersection findFirstIntersection(const Line& ray,
 }
 
 int main() {
-  Vector viewPoint(0, 0, 0);
-  Vector viewDirection(0, 0, 1);
-  Vector viewUp(0, -1, 0);
 
-  double frontPlaneDist = 2;
-  double backPlaneDist = 1000;
+    Vector viewPoint(0, 0, 0);
+    Vector viewDirection(0, 0, 1);
+    Vector viewUp(0, -1, 0);
 
-  double viewPlaneDist = 100;
-  double viewPlaneWidth = 200;
-  double viewPlaneHeight = 100;
+    double frontPlaneDist = 2;
+    double backPlaneDist = 1000;
 
-  int imageWidth = 1000;
-  int imageHeight = 500;
+    double viewPlaneDist = 100;
+    double viewPlaneWidth = 200;
+    double viewPlaneHeight = 100;
 
-  Vector viewParallel = viewUp^viewDirection;
+    int imageWidth = 1000;
+    int imageHeight = 500;
 
-  viewDirection.normalize();
-  viewUp.normalize();
-  viewParallel.normalize();
+    Vector viewParallel = viewUp^viewDirection;
 
-  Image image(imageWidth, imageHeight);
+    viewDirection.normalize();
+    viewUp.normalize();
+    viewParallel.normalize();
 
-  for (int i = 0; i < imageWidth; i++){
+    Image image(imageWidth, imageHeight);
 
-    for (int j = 0; j < imageHeight; j++){
+    Color lightAmbient(1, 1, 1);
+    Color lightDiffuse(1, 1, 1);
+    Color lightSpecular(1, 1, 1);
+    Material lightMaterial(lightAmbient, lightDiffuse, lightSpecular, 1, 1, 1);
 
-        Vector x1 = viewPoint + viewDirection*viewPlaneDist +
-                    viewUp*imageToViewPlane(j, imageHeight, viewPlaneHeight) +
-                    viewParallel*imageToViewPlane(i, imageWidth, viewPlaneWidth);
-        Line line(viewPoint, x1, false);
-        Intersection intersection = findFirstIntersection(line, frontPlaneDist, backPlaneDist);
+    Vector light(300, 200, 0);
 
-        if (intersection.valid()) {
-            image.setPixel(i, j, intersection.geometry().color());
+    Color ambient(0.1, 0.1, 0.1);
+    Color diffuse(0.4, 0.4, 0.4);
+    Color specular(0.6, 0.6, 0.6);
+    Material sphereMaterial(ambient, diffuse, specular, 100, 1, 1);
+
+    for (int i = 0; i < imageWidth; i++){
+
+        for (int j = 0; j < imageHeight; j++){
+
+            Vector x1 = viewPoint + viewDirection*viewPlaneDist +
+                        viewUp*imageToViewPlane(j, imageHeight, viewPlaneHeight) +
+                        viewParallel*imageToViewPlane(i, imageWidth, viewPlaneWidth);
+            Line line(viewPoint, x1, false);
+            Intersection firstIntersection = findFirstIntersection(line, frontPlaneDist, backPlaneDist);
+
+            if (firstIntersection.valid()) {
+
+                //T = vector from the intersection point to the light (normalized)
+                Vector T = light - firstIntersection.vec();
+                T.normalize();
+
+                //N =  normal to the surface at the intersection point (normalized)
+                Vector N = firstIntersection.vec() - ((Sphere*)&firstIntersection.geometry())->center();
+                N.normalize();
+
+                //E = vector from the intersection point to the camera (normalized)
+                Vector E = viewPoint - firstIntersection.vec();
+                E.normalize();
+
+                //R = reflection vector (normalized)
+                Vector R = N*(N*T)*2-T;
+                R.normalize();
+
+                Color color = sphereMaterial.ambient()*lightMaterial.ambient()*firstIntersection.geometry().color();
+                if (N*T > 0){
+                    color += sphereMaterial.diffuse()*lightMaterial.diffuse()*(N*T) *firstIntersection.geometry().color();
+                }
+                if (E*R > 0){
+                    color += sphereMaterial.specular()*lightMaterial.specular()*pow(E*R, sphereMaterial.shininess())*firstIntersection.geometry().color();
+                }
+
+                image.setPixel(i, j, color);
+            }
+
         }
 
     }
 
-  }
+    image.store("scene.ppm");
 
-  image.store("scene.ppm");
+    for(int i=0; i<geometryCount; i++) {
+        delete scene[i];
+    }
 
-  for(int i=0; i<geometryCount; i++) {
-    delete scene[i];
-  }
-
-  return 0;
+    return 0;
 }

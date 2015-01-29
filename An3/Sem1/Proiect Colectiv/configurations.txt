@@ -1,0 +1,26 @@
+---GlassFish Server configuration---
+
+copy MySqlConnector jar to Glassfish/lib
+
+localhost:4848
+login as admin
+
+Resources/JDBC/JDBC Connection Pools: New
+	Pool Name: MySQLPool
+	Resource Type: javax.sql.DataSource
+	Database Driver Vendor: MySql
+	Finish
+
+	Modify following properties:
+	User: root
+	ServerName: localhost
+	Port: 3306
+	DBName: graveyards_management_app
+	Password: root
+	URL: jdbc:mysql://localhost:3306/graveyards_management_app
+	Url: jdbc:mysql://localhost:3306/graveyards_management_app
+
+Resources/JDBC/JDBC Resources: New
+	JNDI Name: MySQL
+	PoolName: MySQLPool
+	Finish

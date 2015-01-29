@@ -1,0 +1,11 @@
+body{
+    background-color: #fcf8e3;
+}
+
+.top-buffer {
+    margin-top: 15px;
+}
+
+.addon {
+    width: 100px;
+}

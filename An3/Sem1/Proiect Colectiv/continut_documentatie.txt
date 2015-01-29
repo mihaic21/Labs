@@ -1,0 +1,7 @@
+documentatia de cerinta (ce deduci din enunt)
+documentatia de specificatii (fiecare functionalitate scrisa in amanuntire)
+documentatia de proiectare (proiectare de ansamblu <mai complexa, diagrame comentate> si de detaliu)
+documentatia de implementare/codificare (in ce limbaj, cu ce unelte)
+documentatia de utilizare
+
+toate pana in 15 pagini

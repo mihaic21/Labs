@@ -108,7 +108,7 @@
 1173341796 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Line.hpp
 	"Vector.hpp"
 
-1414586420 source:/mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/main.cpp
+1417006011 source:/mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/main.cpp
 	<cmath>
 	<iostream>
 	<string>
@@ -141,7 +141,7 @@
 	"Color.hpp"
 	"Intersection.hpp"
 
-1414586783 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Scene.hpp
+1417004456 /mnt/8E304F40304F2E91/Programming/Labs/An3/Sem1/Virtual Reality/Lab1/Scene.hpp
 	"Geometry.hpp"
 	"Sphere.hpp"
 

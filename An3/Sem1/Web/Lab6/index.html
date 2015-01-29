@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>JQuery</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+
+<body>
+
+<button id="show">
+Textul din buton
+</button>
+
+<div class="dialogbox">
+	<button id="hide">X</button>
+	<p>paragraph</p>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" >
+$(document).ready(function () {
+	$("#show").click(function () {
+		$(".dialogbox").show();
+	});
+	$("#hide").click(function () {
+		$(".dialogbox").hide();
+	})
+})
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="recipes.xslt"?>
+<recipes>
+    <recipy>
+        <name>Vegetarian</name>
+        <ingredients>tomato, rice, carrot</ingredients>
+        <preptime>0.5</preptime>
+        <cooktime>0.2</cooktime>
+        <prepSteps>First you boil the water. Then...</prepSteps>
+    </recipy>
+    <recipy>
+        <name>Potatoes</name>
+        <ingredients>tomato, rice, carrot</ingredients>
+        <preptime>0.5</preptime>
+        <cooktime>0.2</cooktime>
+        <prepSteps>First you boil the water. Then...</prepSteps>
+    </recipy>
+    <recipy>
+        <name>Eggs</name>
+        <ingredients>tomato, rice, carrot</ingredients>
+        <preptime>0.6</preptime>
+        <cooktime>0.3</cooktime>
+        <prepSteps>First you boil the water. Then...</prepSteps>
+    </recipy>
+    <recipy>
+        <name>Spaghetti</name>
+        <ingredients>tomato, rice, carrot</ingredients>
+        <preptime>0.6</preptime>
+        <cooktime>0.6</cooktime>
+        <prepSteps>First you boil the water. Then you add the rice and carrots and put some salt.</prepSteps>
+    </recipy>
+    <recipy>
+        <name>Soup</name>
+        <ingredients>tomato, rice, carrot</ingredients>
+        <preptime>0.2</preptime>
+        <cooktime>0.5</cooktime>
+        <prepSteps>First you boil the water. Then...</prepSteps>
+    </recipy>
+</recipes>

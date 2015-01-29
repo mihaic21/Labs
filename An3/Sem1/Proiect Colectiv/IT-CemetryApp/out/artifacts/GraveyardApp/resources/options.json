@@ -1,0 +1,28 @@
+{"Morminte":{
+    "Servlet": "GraveServlet",
+    "Options":
+       [{"Name":"Gestiune Morminte"},
+        {"Name":"Vizualizare \"Registrul de morminte monumente\""},
+        {"Name":"Vizualizare \"Registrul de morminte\""}]
+    },
+"Persoane":{
+    "Servlet": "PersonServlet",
+    "Options":
+        [{"Name":"Gestiune proprietari"},
+        {"Name":"Gestiune decedati"},
+        {"Name":"Vizualizare \"Registrul index anual al decedatilor\""},
+        {"Name":"Vizualizare \"Registrul anual de evidenta a decedatilor fara apartinatori\""}]
+    },
+"Evidenta contractelor de concesiune" :{
+    "Servlet": "ConcessionServlet",
+    "Options":
+        [{"Name": "Gestiunea contractelor de concesiune"},
+        {"Name": "Vizualizare \"Registrul anual de evidenta a contractelor de concesiune\""}]
+    },
+
+"Programare inmormantari" :{
+"Servlet": "FuneralServlet",
+"Options":
+[{"Name": "Gestiunea inmormantarilor"}]
+    }
+}

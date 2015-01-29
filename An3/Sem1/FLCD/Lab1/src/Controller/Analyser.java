@@ -48,7 +48,10 @@ public class Analyser {
             while ((line = bufferedReader.readLine()) != null) {
                 lineNo ++;
                 String newLine = this.organizeLineWithSpaces(line);
+                System.out.println(line);
+                System.out.println(newLine);
                 newLine = this.deleteMultipleSpaces(newLine);
+                System.out.println(newLine);
                 if (!this.parseLine(newLine)){
                     String info = String.format("Lexical error at line %d", lineNo);
                     appendLineInFile(info, errorsFileName);

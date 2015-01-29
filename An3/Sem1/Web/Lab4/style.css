@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family:"Calibri", sans-serif;
+    font-size: 12pt;
+    background: #f0f0f0;
+    cursor: default;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    border-color:#0d1c1b;
+}
+
+td,th{
+    padding: 5px;
+    vertical-align: top;
+    border-color: #80752d;
+}
+th{
+    font-size:20px;
+}
+
+.wrapper{
+    position:absolute;
+    padding: 15px;
+    margin-left: 120px;
+    
+}
+
+.title{
+    margin-left:470px;
+    font-family:"Rockwell", solid, sans-serif;
+    font-size: 30pt;
+    color:#092a4d;
+    border-color:#ffffff;
+}
+
+.wrapper .name{
+    font-size: 15px;
+    color:#035242;
+    font-family:"Harrington", solid, serif;
+}
+
+.wrapper .ingredients{
+    width: 250px;
+}
+
+.wrapper .prepTime{
+    width: 100px;
+}
+
+.wrapper .cookTime{
+    width: 100px;
+}
+
+.wrapper .name h2{
+    font-family:"Harrington", solid, serif;
+}
+.wrapper .name .description{
+    font-size: 50pt;
+}
+
+.wrapper td.prepTime{
+    font-style: italic;
+    color: #e60e0e;
+}
+.wrapper td.cookTime{
+    font-style: italic;
+    color: #e60e0e;
+}
+
+.wrapper th.name{
+    font-family:"Calibri", sans-serif;
+    font-size: 15pt;
+    color:#000;
+}

@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="GraveyardApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/GraveyardApp</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="IT-CemetryApp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="IT-CemetryApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons-lang3-3.3.2" />
+          <element id="library" level="project" name="gson-2.3.1" />
+          <element id="library" level="project" name="poi-3.11-20141221" />
+          <element id="library" level="project" name="poi-scratchpad-3.11-20141221" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

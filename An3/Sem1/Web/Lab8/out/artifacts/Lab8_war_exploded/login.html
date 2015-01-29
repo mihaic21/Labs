@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link href="resources\twitter-bootstrap\css\bootstrap.css" rel="stylesheet">
+    <link href="resources\style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h3>Welcome!</h3>
+
+    <form action="LoginController" method="post" class="row">
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Username" name="username">
+            <input type="password" class="form-control top-buffer" placeholder="Password" name="password">
+        </div>
+        <input type="submit" class="btn btn-info top-buffer"/>
+    </form>
+
+    <hr>
+
+    <div class="top-buffer">
+        <span>OR Create an account</span>
+    </div>
+
+    <div class="container">
+
+        <div class="row top-buffer">
+            <form action="RegisterController" method="post">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h4>Complete the following data</h4>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="username" name="username">
+                            <input type="password" class="form-control" placeholder="Password" name="password">
+                            <input type="text" class="form-control top-buffer" placeholder="Name" name="name">
+                            <input type="text" class="form-control" placeholder="Email" name="email">
+                            <input type="text" class="form-control" placeholder="Age" name="age">
+                            <input type="text" class="form-control" placeholder="Home town" name="hometown">
+                        </div>
+                    </div>
+
+                </div>
+                <input type="submit" value="Register" class="btn btn-info"/>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
